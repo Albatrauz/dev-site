@@ -12,7 +12,8 @@ export default defineNuxtConfig({
   ],
 
   hub: {
-    blob: true
+    blob: true,
+    database: true,
   },
 
   ui: {
@@ -32,5 +33,7 @@ export default defineNuxtConfig({
         commaDangle: 'never'
       }
     }
-  }
+  },
+
+  compatibilityDate: '2024-07-29'
 })
