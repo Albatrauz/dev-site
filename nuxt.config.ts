@@ -24,6 +24,12 @@ export default defineNuxtConfig({
     viewTransition: true
   },
 
+  nitro: {
+    experimental: {
+      openAPI: true
+    }
+  },
+
   devtools: { enabled: true },
 
   eslint: {
