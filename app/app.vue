@@ -10,15 +10,15 @@ useHead({
   }
 })
 
-const title = 'NuxtHub Image Gallery Starter'
-const description = 'A Nuxt template to build your full-stack image gallery application on the edge.'
+const title = 'Michael van Gorkum'
+const description = 'The personal website of Michael van Gorkum'
 
 useSeoMeta({
   title,
   ogTitle: title,
   description,
   ogDescription: description,
-  ogSiteName: 'NuxtHub image gallery template',
+  ogSiteName: 'Personal website of Michael van Gorkum',
   ogImage: 'https://image-gallery.nuxt.dev/social-card.png',
   twitterCard: 'summary_large_image'
 })
@@ -28,7 +28,7 @@ await getImages()
 
 <template>
   <div
-    class="bg-black min-h-[100dvh] overflow-x-auto relative"
+    class="bg-slate-800 min-h-[100dvh] overflow-x-auto relative"
     :class="{ 'flex flex-col md:block': $router.currentRoute.value.fullPath !== '/' }"
   >
     <UNotifications />
