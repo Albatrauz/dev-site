@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "typecheck": "nuxt typecheck",
     "logs": "wrangler pages deployment tail",
-    "logs:preview": "wrangler pages deployment tail --environment preview"
+    "logs:preview": "wrangler pages deployment tail --environment preview",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
@@ -20,12 +21,14 @@
     "@nuxthub/core": "^0.7.0",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
+    "drizzle-orm": "0.33.0",
     "nuxt": "^3.12.2",
     "nuxt-auth-utils": "^0.1.0"
   },
   "devDependencies": {
     "@iconify-json/simple-icons": "^1.1.107",
     "@nuxt/devtools": "^1.3.7",
+    "drizzle-kit": "^0.24.0",
     "eslint": "^9.5.0",
     "lint-staged": "^15.2.7",
     "simple-git-hooks": "^2.11.1",

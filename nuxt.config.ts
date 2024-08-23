@@ -16,17 +16,14 @@ export default defineNuxtConfig({
     database: true,
   },
 
-  ui: {
-    icons: ['simple-icons']
-  },
-
   experimental: {
     viewTransition: true
   },
 
   nitro: {
     experimental: {
-      openAPI: true
+      openAPI: true,
+      tasks: true
     }
   },
 
